@@ -22,7 +22,7 @@ class Command(BaseCommand):
         super(Command, self).add_arguments(parser)
         parser.add_argument('-R', '--router', action='store',
                     dest='router', default='default',
-                    help='Use this router-database other then default')
+                    help='Use this router-database instead of default')
         parser.add_argument('-s', '--style', action='store',
                     dest='style', default=None,
                     help='DSN format style: keyvalue, uri, pgpass, all')

@@ -21,18 +21,18 @@ class Command(BaseCommand):
             'input of any kind.')
         parser.add_argument(
             '-U', '--user', action='store', dest='user', default=None,
-            help='Use another user for the database then defined in '
+            help='Use another user for the database other than defined in '
             'settings.py')
         parser.add_argument(
             '-P', '--password', action='store', dest='password', default=None,
-            help='Use another password for the database then defined in '
+            help='Use another password for the database than defined in '
             'settings.py')
         parser.add_argument(
             '-D', '--dbname', action='store', dest='dbname', default=None,
-            help='Use another database name then defined in settings.py')
+            help='Use another database name than defined in settings.py')
         parser.add_argument(
             '-R', '--router', action='store', dest='router', default='default',
-            help='Use this router-database other then defined in settings.py')
+            help='Use this router-database other than defined in settings.py')
 
     @signalcommand
     def handle(self, *args, **options):

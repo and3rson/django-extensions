@@ -378,7 +378,7 @@ class Command(BaseCommand):
                 if file_size > 1024 and content_type in self.GZIP_CONTENT_TYPES:
                     filedata = self.compress_string(filedata)
                     if self.rename_gzip:
-                        # If rename_gzip is True, then rename the file
+                        # If rename_gzip is True then rename the file
                         # by appending an extension (like '.gz)' to
                         # original filename.
                         file_key = '%s.%s' % (

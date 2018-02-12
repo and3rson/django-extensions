@@ -216,7 +216,7 @@ class Command(BaseCommand):
             raise CommandError("pydot returned an error")
         if isinstance(graph, (list, tuple)):
             if len(graph) > 1:
-                sys.stderr.write("Found more then one graph, rendering only the first one.\n")
+                sys.stderr.write("Found more than one graph, rendering only the first one.\n")
             graph = graph[0]
 
         output_file = kwargs['outputfile']

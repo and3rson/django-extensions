@@ -22,7 +22,7 @@ The envisioned use case is something like this:
         super(Command, self).add_arguments(parser)
         parser.add_argument(
             '-R', '--router', action='store', dest='router', default='default',
-            help='Use this router-database other then defined in settings.py')
+            help='Use this router-database other than defined in settings.py')
         parser.add_argument(
             '-D', '--drop', action='store_true', dest='drop', default=False,
             help='If given, includes commands to drop any existing user '

@@ -46,7 +46,7 @@ class Command(BaseCommand):
         ),
         parser.add_argument(
             "-n", "--newer", action="store_true", dest="show_newer",
-            help="Also show when newer version then available is installed."
+            help="Also show when a newer version is available than the installed one."
         )
 
     @signalcommand
